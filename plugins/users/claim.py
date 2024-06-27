@@ -21,18 +21,19 @@ def start(_,m):
             m.reply('User updated successfully, ya eres premium.✅')
             MongoDB().key_delete(bins[1])
 
-            texto= f'''<b>Key reclamada🔓
+            texto= f'''<b>Key reclamada
 
-Name: {m.from_user.first_name}
-id: {m.from_user.id}
-Username: @{m.from_user.username}
--------------
-Reclamo key
+            Name: {m.from_user.first_name}
+            id: {m.from_user.id}
+            Username: @{m.from_user.username}
+            -------------
+            Reclamo key
 
-key: {querYl['key']}
-dias: {querYl['dias']}
--------------
-</b>'''
+            key: {querYl['key']}
+            dias: {querYl['dias']}
+            -------------
+            </b>'''
+            
             Client.send_message(_,chat_id=-1002058267689,text=texto)
             return
         
