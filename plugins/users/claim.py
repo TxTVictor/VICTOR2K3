@@ -7,10 +7,10 @@ def start(_,m):
     querY = MongoDB().query_user(int(m.from_user.id))
 
     if  querY == None: return m.reply('Usar el comando $register para el registro.')
-    bins = m.text.split('ingrese la key🔑')
+    bins = m.text.split(' ')
     if  querY['role'] == 'baneado': return m.reply('User baneado')
     
-    if len(bins) < 2: return m.reply('ingrese la key🔑.')
+    if len(bins) < 2: return m.reply('ingrese la key.')
     
     querYl = MongoDB().query_key(bins[1])
 
