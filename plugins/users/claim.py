@@ -36,5 +36,5 @@ def start(_,m):
             Client.send_message(_,chat_id=-1002058267689,text=texto)
             return
         
-        else: m.reply('Ya puedes usarme como lo hizo tu ex😜.✅')
+        else: m.reply('Ya puedes usarme como lo hizo tu ex.✅')
     except: m.reply('invalid key.❌')
