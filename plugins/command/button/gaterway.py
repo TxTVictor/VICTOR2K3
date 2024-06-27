@@ -7,9 +7,9 @@ def gates_coman(client, message):
 #################
 - Stripe Gate ( /ah ) ✅
 #################
-- Braintree Avs ( /br ) ✅
+- Shopify + Braintree ( /br ) ✅
 #################
-- Braintre + Shopify ( /sb ) ✅
+- Braintre Avs ( /sb ) ✅
 #################
 - Shopify Normal ( /sh ) ✅
 #################
