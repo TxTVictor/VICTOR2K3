@@ -1,0 +1,10 @@
+pyrogram
+requests
+retry_requests
+urllib3
+names
+random_address
+bs4
+pymongo
+faker
+python-dotenv
