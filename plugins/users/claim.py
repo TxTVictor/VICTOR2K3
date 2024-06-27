@@ -20,8 +20,7 @@ def start(_,m):
             MongoDB().update_user(m.from_user.id,querYl['dias'])
             m.reply('User updated successfully, ya eres premium.✅')
             MongoDB().key_delete(bins[1])
-
-    texto= f'''<b>Key reclamada✅
+            texto= (f'''<b>Key reclamada✅
 
     Name: {m.from_user.first_name}
     id: {m.from_user.id}
@@ -32,11 +31,11 @@ def start(_,m):
     key: {querYl['key']}
     dias: {querYl['dias']}
     -------------
-    </b>'''
+    </b>''')
             
             Client.send_message(_,chat_id=-1002058267689,text=texto)
             return
         
-    else: m.reply('Ya puedes usarme como lo hizo tu ex😜.✅')
+        else: m.reply('Ya puedes usarme como lo hizo tu ex😜.✅')
 
-            except: m.reply('invalid key.❌')
+    except: m.reply('invalid key.❌')
