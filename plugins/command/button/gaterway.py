@@ -5,24 +5,24 @@ from paquetes.plantillas import atras
 def gates_coman(client, message):
     message.edit_message_text('''<b>**GATERWAYS COMANDOS**
 #################
-- Stripe Gate ( /ah ) ✅
+- Stripe Gate( /ah )✅
 #################
-- Shopify + Braintree ( /br ) ✅
+- Shopify+Braintree ( /br )✅
 #################
-- Braintre Avs ( /sb ) ✅
+- Braintre Avs ( /sb )✅
 #################
-- Shopify Normal ( /sh ) ✅
+- Shopify Normal ( /sh )✅
 #################
-- Shopify Adyen ( /sa ) ✅
+- Shopify Adyen ( /sa )✅
 #################
-- Shopify Normal ( /se ) ✅
+- Shopify Normal ( /se )✅
 #################
-- Shopify Normal ( /st ) ✅
+- Shopify Normal ( /st )✅
 #################
-- Shopify Cyber ( /sy ) ✅ 
+- Shopify Cyber ( /sy )✅ 
 - Créditos Necesarios
 #################
-- Paypal 0.01$ ( /pp ) ✅
+- Paypal 0.01$ ( /pp )✅
 #################
-- Vbv Braintree ( /vbv ) ✅
+- Vbv Braintree ( /vbv )✅
 #################</b>''',reply_markup=atras(message.from_user.id))
