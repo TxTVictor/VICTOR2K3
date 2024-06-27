@@ -7,7 +7,7 @@ def start(_,m):
     querY = MongoDB().query_user(int(m.from_user.id))
 
     if  querY == None: return m.reply('Usar el comando $register para el registro.')
-    bins = m.text.split(' ')
+    bins = m.text.split('ingrese la key🔑')
     if  querY['role'] == 'baneado': return m.reply('User baneado')
     
     if len(bins) < 2: return m.reply('ingrese la key🔑.')
@@ -21,26 +21,22 @@ def start(_,m):
             m.reply('User updated successfully, ya eres premium.✅')
             MongoDB().key_delete(bins[1])
 
-            texto= f'''<b>Key reclamada
+    texto= f'''<b>Key reclamada✅
 
-            Name: {m.from_user.first_name}
-            id: {m.from_user.id}
-            Username: @{m.from_user.username}
-            -------------
-            Reclamo key
+    Name: {m.from_user.first_name}
+    id: {m.from_user.id}
+    Username: @{m.from_user.username}
+    -------------
+    Reclamo key
 
-            key: {querYl['key']}
-            dias: {querYl['dias']}
-            -------------
-            </b>'''
+    key: {querYl['key']}
+    dias: {querYl['dias']}
+    -------------
+    </b>'''
             
             Client.send_message(_,chat_id=-1002058267689,text=texto)
             return
         
-        else: m.reply('Ya puedes usarme como lo hizo tu ex😜.✅')
+    else: m.reply('Ya puedes usarme como lo hizo tu ex😜.✅')
 
-
-
-
-            
-    except: m.reply('invalid key.❌')
+            except: m.reply('invalid key.❌')
